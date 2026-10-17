@@ -1,282 +1,113 @@
-\# Marketing Campaign Performance Analysis
+# Marketing Campaign Performance Analysis
 
+**From marketing data to business insights | Power BI**
 
+An interactive dashboard analysing campaign revenue, marketing spend, ROI, and regional performance to support better marketing decisions.
 
-\*\*Turning marketing data into business decisions.\*\*
+**Navigate:** [Dashboard Preview](#dashboard-preview) · [Key Findings](#key-findings) · [Business Recommendations](#business-recommendations) · [Tools Used](#tools-used)
 
+---
 
+## Dashboard Preview
 
-An interactive Power BI dashboard exploring campaign revenue, marketing spend, ROI, and regional performance to identify patterns and uncover opportunities for improvement.
+![Marketing Campaign Performance Dashboard](screenshots/Marketing-Campaign-Performance-Dashboard.png)
 
+*An overview of campaign performance across regions, channels, and campaign types.*
 
+## Project Overview
 
-\[View Dashboard](dashboard/Marketing-Campaign-Analysis.pbix) · \[Explore the Data](data/) · \[View Insights](#key-findings)
+Marketing teams need to understand whether their campaigns are delivering worthwhile returns. This project brings key performance indicators into one Power BI dashboard to compare campaigns, explore regional differences, and identify areas for further investigation.
 
+**Business objective:** Understand which campaigns show stronger reported returns and where further analysis could improve marketing decisions.
 
+## Key Findings
 
-
-
-
-
-\## Dashboard Preview
-
-
-
-!\[Marketing Campaign Performance Dashboard](screenshots/Marketing-Campaign-Performance-Dashboard.png)
-
-
-
-\*An interactive view of marketing performance across campaigns, regions, and campaign types.\*
-
-
-
-\## The Business Challenge
-
-
-
-Marketing teams invest across multiple campaigns and channels, but spending more does not necessarily mean achieving better results.
-
-
-
-The challenge was to understand how campaigns compare, where revenue is being generated, and which areas deserve a closer look before making marketing budget decisions.
-
-
-
-\*\*The central question:\*\* Which campaigns show stronger returns, and what should the business investigate next?
-
-
-
-\## The Analysis
-
-
-
-This project follows five steps to connect the data with practical business decisions.
-
-
-
-\### 01 — Problem
-
-
-
-Understand the challenge behind marketing performance.
-
-
-
-The business needs a clearer way to compare campaign investment with reported returns, identify differences between regions, and evaluate the distribution of Digital and Traditional campaigns.
-
-
-
-\### 02 — Evidence
-
-
-
-Start with the numbers.
-
-
-
-| Performance indicator | Dashboard result |
-
-|---|---:|
-
+| Metric | Dashboard Result |
+|:--|--:|
 | Total Revenue | 42.54M |
-
 | Total Spend | 25.69M |
-
 | Average ROI | 68% |
-
 | Highest displayed ROI | Influencer Marketing |
-
 | Digital campaign share | 65.5% |
 
+- **Campaigns:** Influencer Marketing has the highest bar in the displayed ROI comparison.
+- **Regions:** Africa records the highest revenue among the displayed regions; South America records the lowest.
+- **Campaign mix:** Digital campaigns account for 65.5% of campaign records. This does not necessarily mean they are more effective.
 
+## Business Story
 
-These figures provide a snapshot of performance and help direct the investigation.
+### 01 — Problem
 
+How can a marketing team compare campaign performance and make informed budget decisions? Revenue alone does not show whether a campaign delivers strong returns, so spending and ROI must also be considered.
 
+### 02 — Evidence
 
-\### 03 — Investigation
+The dashboard compares revenue and spend by region, reported ROI by campaign, and campaign distribution by type. These metrics provide a starting point for understanding performance differences.
 
+### 03 — Investigation
 
+I compared campaign spending with reported ROI, explored regional revenue patterns, and reviewed the balance between Digital and Traditional campaigns. These views highlight patterns that may deserve closer attention.
 
-Look beyond the headline numbers.
+### 04 — Business Recommendations
 
+- Investigate the factors behind Influencer Marketing's reported ROI.
+- Review lower-ranked campaigns to identify opportunities for improvement.
+- Compare regional campaign mix, spending, and conversion outcomes.
+- Evaluate Digital and Traditional campaigns using consistent performance metrics.
+- Validate the ROI formula before making significant budget changes.
 
+### 05 — Conclusion
 
-\- \*\*Campaign performance:\*\* Influencer Marketing has the highest bar in the displayed ROI comparison, followed by Social Media Ads.
+The dashboard provides a consolidated view of marketing performance. Its key lesson is to consider revenue, spend, and returns together rather than judging campaigns by one metric alone. Further validation is needed before making major budget decisions.
 
-\- \*\*Regional performance:\*\* Africa records the highest revenue among the regions displayed, while South America records the lowest.
+## Dashboard Features
 
-\- \*\*Spending patterns:\*\* Comparing campaign spend with ROI helps identify where investment and reported returns differ.
+| Visual | Purpose |
+|:--|:--|
+| KPI cards | Summarise revenue, spend, average ROI, and the leading campaign |
+| Regional comparison | Compare revenue and spend across regions |
+| Campaign comparison | Explore campaign spending and reported ROI |
+| ROI bar chart | Compare ROI across campaign names |
+| ROI gauge | Display average ROI |
+| Campaign type chart | Show campaign record distribution |
+| Interactive filters | Explore campaign types and regions |
 
-\- \*\*Campaign mix:\*\* Digital campaigns account for a larger share of campaign records than Traditional campaigns.
+## Tools Used
 
+**Power BI** · **Power Query** · **DAX** · **CSV** · **Business Analysis**
 
+Used for data preparation, KPI reporting, campaign comparisons, visual analysis, and communicating business findings.
 
-These findings describe the available data. They do not automatically establish profitability or prove that a campaign caused a particular result.
-
-
-
-\### 04 — Action
-
-
-
-Translate findings into next steps.
-
-
-
-\- Investigate what contributes to the stronger displayed ROI of Influencer Marketing.
-
-\- Review lower-performing campaigns to identify opportunities for improvement.
-
-\- Compare regional campaign mixes, costs, and conversion performance.
-
-\- Evaluate Digital and Traditional campaigns using consistent performance measures.
-
-\- Test potential budget changes before scaling investment.
-
-
-
-The objective is not to increase spending based on a single chart, but to make better-informed decisions using additional evidence.
-
-
-
-\### 05 — Conclusion
-
-
-
-The dashboard provides a consolidated view of campaign performance and highlights areas worth investigating further.
-
-
-
-The main lesson is that marketing decisions should consider spending, revenue, and returns together. A campaign that generates more revenue is not necessarily the most profitable, and a larger share of campaign activity does not necessarily indicate better performance.
-
-
-
-Power BI makes these comparisons easier to explore, communicate, and use as a starting point for business decisions.
-
-
-
-\---
-
-
-
-\## Inside the Dashboard
-
-
-
-\*\*Performance overview\*\*  
-
-KPI cards summarise total revenue, total spend, average ROI, and the campaign with the highest displayed ROI.
-
-
-
-\*\*Regional comparison\*\*  
-
-A clustered column chart compares revenue and spend across campaign regions.
-
-
-
-\*\*Campaign analysis\*\*  
-
-Combination and bar charts compare spending and ROI across campaign names.
-
-
-
-\*\*ROI overview\*\*  
-
-A gauge presents the reported average ROI, while a campaign type chart shows the distribution of campaign records.
-
-
-
-\*\*Interactive exploration\*\*  
-
-The Campaign Type slicer and Campaign Region treemap help users explore different parts of the dataset.
-
-
-
-\## Tools \& Techniques
-
-
-
-| Tool | Purpose |
-
-|---|---|
-
-| Microsoft Power BI | Dashboard design and reporting |
-
-| Power Query | Data preparation and transformation |
-
-| DAX | KPI calculations and measures |
-
-| CSV | Source data |
-
-| Business analysis | Interpretation and recommendations |
-
-
-
-\## Project Structure
-
-
+## Project Structure
 
 ```text
-
 Marketing-Campaign-Analysis/
-
 ├── dashboard/
-
 │   └── Marketing-Campaign-Analysis.pbix
-
 ├── data/
-
-│   ├── region performance.csv
-
+│   ├── marketing campaign details.csv
 │   ├── marketing campaign performance.csv
-
-│   └── marketing campaign details.csv
-
+│   └── region performance.csv
 ├── screenshots/
-
 │   └── Marketing-Campaign-Performance-Dashboard.png
-
 └── README.md
+```
 
+## How to Explore
 
+1. Download or clone the repository.
+2. Open the Power BI file in Power BI Desktop.
+3. Update the CSV source paths if necessary.
+4. Refresh the data if prompted.
+5. Use the available filters to explore campaign performance.
 
+## Notes & Limitations
 
+- ROI should be interpreted according to the dataset definition and underlying DAX calculation.
+- Revenue minus marketing spend is not net profit because other costs may apply.
+- Campaign counts describe distribution, not effectiveness.
+- Findings are descriptive and do not prove causation.
 
-\## Explore the Project
+---
 
-
-
-1\. Open the `.pbix` file using Power BI Desktop.
-
-2\. If necessary, update the data source paths to match the location of the CSV files.
-
-3\. Refresh the data if prompted.
-
-4\. Use the available filters to explore campaign types and regions.
-
-5\. Compare the results and investigate the findings described above.
-
-
-
-\## Notes on Interpretation
-
-
-
-\- The displayed ROI figures should be validated against the dataset's definition of ROI and the underlying DAX measures.
-
-\- Revenue minus marketing spend does not represent net profit because other costs may apply.
-
-\- Campaign distribution measures activity, not effectiveness.
-
-\- The recommendations are starting points for further investigation, not proof that a specific budget change will improve results.
-
-
-
-\---
-
-
-
-\*Built as a practical data analytics project focused on turning numbers into clear findings and actionable business questions.\*
-
+*Created to practise data analysis, dashboard development, and business storytelling with Power BI.*
